@@ -1,0 +1,25 @@
+<html>
+	<head><title>Storage Demo</title></head>
+	<body>
+		<h2>Add a datasource</h2>
+		<form action="/create" method="GET">
+			<input type="text" name="name"/>
+			<input type="submit"  value="submit"/>		
+		</form>				
+		<h2>Add a variable</h2>
+		<form action="/insert" method="GET">
+			Name<input type="text" name="vname"/>
+			Unit<input type="text" name="vunit"/>
+			Value<input type="text" name="vval"/>
+			<input type="submit" value="Insert"/>		
+		</form>
+		<form action="/getvalues" method="GET">
+			<input type="submit"  value="display"/>		
+		</form>
+		{% if msg %}
+			{{ msg }}
+		{% endif %}
+	</body>
+</html>
+
+

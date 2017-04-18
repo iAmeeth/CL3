@@ -7,7 +7,8 @@ class Philosopher(threading.Thread):
  
     running = True
     connection = MongoClient("127.0.0.1",27017)
-
+    #URI="mongodb://user:pass@ip:port/dbname"
+    #connection=MongoClient(URI)
     @staticmethod
     def sendToMongo(index):
         

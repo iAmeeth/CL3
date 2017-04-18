@@ -1,0 +1,15 @@
+Demonstrate the use of following PaaS tools: Cloud Foundry / GoogleApp Engine/ OpenShift with a database application.
+
+Install Google App Engine SDK
+./google-cloud-sdk/install.sh
+./google-cloud-sdk/bin/gcloud init
+gcloud components install app-engine-python
+
+In Eclipse:
+“Create ‘src’ folder and add it to PYTHONPATH“.
+Give path of Google App Engine installed directory till google_appengine
+Choose “Hello Webapp World” template to generate the sample files.
+For running:
+“Run As” –> “Run Configuration”, create a new “PyDev Google App Run“.
+Main tab -> Main module, manually type the directory path of “dev_appserver.py“.
+Arguments tab -> Program arguments, put “${project_loc}/src“.
